@@ -1,0 +1,249 @@
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 60px;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-content {
+  padding: 0 20px 60px;
+}
+
+.about-content section {
+  margin-bottom: 60px;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.features-section {
+  background: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.values-section {
+  background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+  padding: 50px 30px;
+  border-radius: 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-3px);
+}
+
+.value-item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.team-section {
+  background: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: white;
+}
+
+.contact-section p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-btn:not(.secondary) {
+  background: white;
+  color: #ff6b35;
+}
+
+.contact-btn:not(.secondary):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.contact-btn.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.contact-btn.secondary:hover {
+  background: white;
+  color: #ff6b35;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 15px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-content {
+    padding: 0 15px 40px;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .features-section,
+  .values-section,
+  .team-section,
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .features-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 200px;
+  }
+}

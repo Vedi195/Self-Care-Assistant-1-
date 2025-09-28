@@ -1,0 +1,157 @@
+.favorites-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.favorites-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.favorites-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.no-favorites {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.no-favorites-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-favorites h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.no-favorites p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.favorites-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.favorites-section {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ff6b35;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.favorite-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  padding-right: 30px;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .favorites-page {
+    padding: 20px 15px;
+  }
+
+  .favorites-header h1 {
+    font-size: 2rem;
+  }
+
+  .favorites-header p {
+    font-size: 1rem;
+  }
+
+  .favorites-section {
+    padding: 20px;
+  }
+
+  .favorites-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .no-favorites {
+    padding: 40px 20px;
+  }
+
+  .no-favorites-icon {
+    font-size: 3rem;
+  }
+
+  .no-favorites h3 {
+    font-size: 1.5rem;
+  }
+
+  .no-favorites p {
+    font-size: 1rem;
+  }
+}
